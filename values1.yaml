@@ -1,0 +1,15 @@
+auth:
+  rootPassword: "RootPass123!"
+  database: "appdb"
+  username: "appuser"
+  password: "AppPass123!"
+
+primary:
+  persistence:
+    enabled: true
+    storageClass: "nfs-client"
+    accessModes:
+      - ReadWriteOnce
+    size: 8Gi
+
+architecture: standalone
